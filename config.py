@@ -1,13 +1,8 @@
-#(©)CodeXBotz
-
-
-
+#(©)CodeXBotz & @bjsodha
 
 import os
 import logging
 from logging.handlers import RotatingFileHandler
-
-
 
 #Bot token @Botfather
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
@@ -32,7 +27,8 @@ DB_URI = os.environ.get("DATABASE_URL", "")
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+AUTH_CHANNEL = int(os.environ.get("AUTH_CHANNEL", "0"))
+AUTH_CHANNEL2 = int(os.environ.get("AUTH_CHANNEL2", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
